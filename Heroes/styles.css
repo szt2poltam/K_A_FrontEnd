@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #f22d2d, #556270, #3a9cab);
+    background-size: 200% 200%;
+    animation: gradientBackground 10s ease infinite;
+  }
+  
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .hero-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+  
+  .hero-card:hover {
+    opacity: 0.4;
+  }
+  
+  .hero-card h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .hero-card p {
+    margin: 0;
+  }
+  
