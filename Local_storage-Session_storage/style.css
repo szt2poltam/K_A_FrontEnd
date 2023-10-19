@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    background-color: rgb(49, 49, 61);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container h1{
+    
+    color: blueviolet;
+}
+
+.container label{
+    color: whitesmoke;
+}
+
+#result{
+    margin-top: 20px;
+    color: whitesmoke;
+}
