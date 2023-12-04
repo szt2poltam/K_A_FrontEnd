@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-image: url(IMG/star-wars-backgrounds-30_a8feb217.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-hero-form{
+  background-color: #729dc3;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  width: 100px;
+  height: 150px;
+}
+
+.input{
+  border: 1px solid #729dc3;
+  border-radius: 6px;
+  background-color: #edd5d5;
+  width: 100px;
+}
+
+.btn{
+  border: 1px solid #729dc3;
+  background-color: #edd5d5;
+  border-radius: 15px;
+}
+
+  
+.hero-card {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  transition: transform .2s;
+  background: linear-gradient(45deg, #edd5d5, #729dc3, #07467d);
+  background-size: 200% 200%;
+  animation: gradientBackground 10s ease infinite;
+} 
+
+.hero-card:hover{
+  transform: scale(1.2);
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+  
+.hero-card h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+  
+.hero-card p {
+  margin: 0;
+}
+  

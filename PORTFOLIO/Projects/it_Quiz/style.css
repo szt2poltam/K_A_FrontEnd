@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login{
+  display: block;
+}
+
+#bg {
+  background-image: linear-gradient(to top, #1e181d 0%, #b9c3d4 100%);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(5px);
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: #4A4A4A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#login form {
+  width: 350px;
+  position: relative;
+}
+
+#login form h1{
+  font-family: 'Lato',sans-serif;
+  font-size: 45.5px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+#login form .form-field::before {
+  font-size: 20px;
+  position: absolute;
+  left: 15px;
+  top: 17px;
+  color: #888888;
+  content: " ";
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#login form .form-field:nth-child(2)::before {
+  background-image: url(img/user-icon.png);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+}
+
+#login form .form-field:nth-child(3)::before {
+  background-image: url(img/mail-icon.png);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+}
+
+#login form .form-field:nth-child(4)::before {
+  background-image: url(img/cake-icon.png);
+  width: 20px;
+  height: 20px;
+  top: 15px;
+}
+
+#login form .form-field:nth-child(5)::before {
+  background-image: url(img/lock-icon.png);
+  width: 16px;
+  height: 16px;
+}
+
+#login form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+#login form input {
+  font-family: inherit;
+  width: 100%;
+  outline: none;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  display: block;
+  padding: 0.9rem 0.7rem;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 17px;
+  color: #4A4A4A;
+  text-indent: 40px;
+  border: 2px solid #aeaeb5;
+  border-radius: 6px;
+}
+
+#login form input:focus{
+  outline: none;
+  border-color: #3b3b3b75;
+  box-shadow: 0 0 10px #77a1e9;
+}
+
+#login form .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0.9rem 2.5rem;
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 17px;
+  transition: background-color 200ms ease-out;
+}
+
+#login form .form-field .btn {
+  padding-right: 80px;
+}
+
+#login form .btn:hover{
+  background-color: #252525;
+}
+
+/*TESZT 1 ______________________________*/
+
+#teszt1{
+  display: none;
+}
+
+#teszt1 form {
+  width: -50px;
+  position: relative;
+  display: block;
+}
+
+#teszt1 form h1{
+  font-size: 50px;
+  font-family: 'Lato',sans-serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.27);
+}
+
+#teszt1 form p{
+  font-family: 'Lato',sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#teszt1 .teszt1-form-field{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content:space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem auto;
+  position: relative;
+}
+
+#teszt1 .teszt1-form-field label{
+  position: absolute;
+  left: 40%;
+}
+
+#teszt1 .teszt1-form-field label:hover{
+  font-size: 25px;
+}
+
+#teszt1 .teszt1-form-field .btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 17px;
+  transition: background-color 200ms ease-out;
+}
+
+#teszt1 .teszt1-form-field .btn:hover{
+  background-color: #252525;
+}
+
+/*TESZT 1 ______________________________*/
+
+
+/*TESZT 2 ______________________________*/
+
+#teszt2{
+  width: -50px;
+  position: relative;
+  display: none;
+}
+
+#teszt2 h1{
+  font-size: 50px;
+  font-family: 'Lato',sans-serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.27);
+}
+
+#teszt2 label{
+  font-family: 'Lato',sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#teszt2 .teszt2-form-field{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem auto;
+  position: relative;
+}
+
+#teszt2 .teszt2-form-field label{
+  position: absolute;
+  left: 40%;
+}
+
+#teszt2 .teszt2-form-field label:hover{
+  font-size: 25px;
+}
+
+#teszt2 .teszt2-form-field .btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 17px;
+  transition: background-color 200ms ease-out;
+}
+
+#teszt2 .teszt2-form-field .btn:hover{
+  background-color: #252525;
+}
+
+/*TESZT 2 ______________________________*/
+
+/*TESZT 3 ______________________________*/
+
+#teszt3{
+  width: -50px;
+  position: relative;
+  display: none;
+}
+
+#teszt3 h1{
+  font-size: 50px;
+  font-family: 'Lato',sans-serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.27);
+}
+
+#teszt3 p{
+  font-family: 'Lato',sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#teszt3 .teszt3-form-field{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem auto;
+  position: relative;
+}
+
+#teszt3 .teszt3-form-field #q3{
+  margin-left: 140px;
+  text-decoration: none;
+}
+
+#teszt3 form .teszt3-form-field .btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 17px;
+  transition: background-color 200ms ease-out;
+}
+
+#teszt3 .teszt3-form-field .btn:hover{
+  background-color: #252525;
+}
+
+/*TESZT 3 ______________________________*/
+
+/*TESZT 4 ______________________________*/
+
+#teszt4{
+  width: -50px;
+  position: relative;
+  display: none;
+}
+
+#teszt4 h1{
+  font-size: 50px;
+  font-family: 'Lato',sans-serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.27);
+}
+
+#teszt4 p{
+  font-family: 'Lato',sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#teszt4 .teszt4-form-field{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem auto;
+  position: relative;
+}
+
+#teszt4 .teszt4-form-field #q4{
+  margin-left: 145px;
+  text-decoration: none;
+  resize: none;
+}
+
+#teszt4 form .teszt4-form-field .btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 17px;
+  transition: background-color 200ms ease-out;
+}
+
+#teszt4 .teszt4-form-field .btn:hover{
+  background-color: #252525;
+}
+
+/*TESZT 4 ______________________________*/
+
+/*TESZT 5 ______________________________*/
+
+
+
+/*TESZT 5 ______________________________*/
+
+#teszt5{
+  width: -50px;
+  position: relative;
+  display: none;
+}
+
+#teszt5 h1{
+  font-size: 50px;
+  font-family: 'Lato',sans-serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.27);
+}
+
+#teszt5 p{
+  font-family: 'Lato',sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+#teszt5 .teszt5-form-field{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem auto;
+  position: relative;
+}
+
+#teszt5 .teszt5-form-field #q4{
+  margin-left: 145px;
+  text-decoration: none;
+  resize: none;
+}
+
+#teszt5 form .teszt5-form-field .btn{
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: -15px;
+  padding: 0.9rem 2.5rem;
+  text-align: center;
+  background-color: #3b3b3b;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 17px;
+  transition: background-color 200ms ease-out;
+}
+
+#teszt5 .teszt5-form-field .btn:hover{
+  background-color: #252525;
+}
+
+
+/*TESZT 5 ______________________________*/
+
+#eredmeny{
+  width: -50px;
+  position: relative;
+  display: none;
+}
+
+#eredmeny h1{
+  font-size: 50px;
+  font-family: 'Lato',sans-serif;
+  margin-bottom: 40px;
+  cursor: pointer;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.27);
+}
+
+#eredmeny p{
+  font-family: 'Lato',sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+

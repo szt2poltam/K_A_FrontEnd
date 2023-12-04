@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="hu" >
+<head>
+  <meta charset="UTF-8">
+  <title>Beadandó</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="bg"></div>
+
+  <div id="login">
+    <form>
+      <h1 id="title">IT QUIZ </h1>
+      <!--TELJES NÉV-->
+      <div class="form-field">
+        <input id="nev" type="text" placeholder="Teljes név"/>
+      </div>
+    
+      <!--EMAIL-CÍM-->
+      <div class="form-field">
+        <input id="email" type="email" placeholder="E-mail"/>
+      </div>
+    
+      <!--SZÜLETÉSI IDŐ-->
+      <div class="form-field">
+        <input id="date" type="text" placeholder="Születési idő"/>
+      </div>
+    
+      <!--JELSZÓ-->
+      <div class="form-field">
+        <input id="jelszo" type="password" placeholder="Jelszó"/>
+      </div>
+    
+        <!--OK-->
+      <div class="form-field">
+        <input type="button" value="Bejelentkezés" id="gomb" class="btn" onclick="validate()" >
+      </div>
+    </form>
+  </div>
+
+
+<div id="teszt1">
+  <form>
+
+      <h1>1. KÉRDÉS</h1>
+      <p>Melyik függvényt használjuk, hogy a felhasználó<br> által megadott válaszokat ellenőrizzük?</p>
+
+    <div class="teszt1-form-field">
+      <label><input type="radio" name="q1" id="q1" value="confirm()">confirm()</label><br>
+    </div>
+
+    <div class="teszt1-form-field">
+      <label><input type="radio" name="q1" id="q1" value="alert()">alert()</label><br>
+    </div>
+
+    <div class="teszt1-form-field">
+      <label><input type="radio" name="q1" id="q1" value="prompt()">prompt()</label><br> 
+    </div> 
+
+    <div class="teszt1-form-field">
+      <input type="button" value="Következő" id="gomb" class="btn" onclick="test1()" >
+    </div> 
+  </form>  
+</div>
+    
+<div id="teszt2">
+  <form id="form">
+      <h1>2. KÉRDÉS</h1>
+      <p>Melyek a legnépszerűbb programozási nyelvek?</p>
+
+    <div class="teszt2-form-field">
+      <label><input type="checkbox" name="q2" id="q2_1" value="HTMLCSS">HTML/CSS</label><br>
+    </div>
+
+    <div class="teszt2-form-field">
+      <label><input type="checkbox" name="q2" id="2_2" value="JavaScript">JavaScript</label><br>
+    </div>
+
+    <div class="teszt2-form-field">
+      <label><input type="checkbox" name="q2" id="q2_3" value="Python">Python</label><br> 
+    </div> 
+
+    <div class="teszt2-form-field">
+      <label><input type="checkbox" name="q2" id="q2_4" value="Java">Java</label><br> 
+    </div> 
+
+    <div class="teszt2-form-field">
+      <input type="button" value="Következő" id="gomb" class="btn" onclick="test2()" >
+    </div> 
+
+
+    <div class="teszt2-form-field">
+      <input type="button" value="Vissza" id="gomb" class="btn" onclick="back1()">
+    </div> 
+  </form>  
+</div>
+
+<div id="teszt3">
+  <form id="form">
+      <h1>3. KÉRDÉS</h1>
+      <p>Mi a sortörés legegyszerűbb módja HTML nyelvben?</p>
+
+    <div class="teszt3-form-field">
+    <input type="text" name="q3" id="q3">
+    </div>
+
+
+    <div class="teszt3-form-field">
+      <input type="button" value="Következő" id="gomb" class="btn" onclick="test3()" >
+    </div> 
+
+
+    <div class="teszt3-form-field">
+      <input type="button" value="Vissza" id="gomb" class="btn" onclick="back2()">
+    </div> 
+  </form>  
+</div>
+
+<div id="teszt4">
+  <form id="form">
+      <h1>4. KÉRDÉS</h1>
+      <p>Milyen programozási nyelveket tartalmazhatott a beadandó?</p>
+
+    <div class="teszt4-form-field">
+    <textarea name="q4" id="q4" cols="30" rows="1"></textarea>
+    </div>
+
+
+    <div class="teszt4-form-field">
+      <input type="button" value="Következő" id="gomb" class="btn" onclick="test4()" >
+    </div> 
+
+
+    <div class="teszt4-form-field">
+      <input type="button" value="Vissza" id="gomb" class="btn" onclick="back3()">
+    </div> 
+  </form>  
+</div>
+
+<div id="teszt5">
+  <form id="form">
+      <h1>5. KÉRDÉS</h1>
+      <p>Melyik válasz helyes?</p>
+      <p>Mik a képernyőobjektumok?</p>
+
+      <select name="teszt5-form-field">
+        <option value="q1" id="q5" class="q5" name="q1">A képernyő magassága biztosított. / A képernyő szélessége biztosított.</option>
+        <option value="q2" id="q5" class="q5" name="q2">A képernyőn létrejött elem biztosított. / A képernyőn létrejött elem biztosított, és védett.</option>
+        <option value="q3" id="q5" class="q5" name="q3">A képernyő mélysége biztosított. / A képernyő szélessége biztosított.</option>
+        <option value="q4" id="q5" class="q5" name="q4">A képernyőn szerkesztett elem biztosított. / A képernyőn létrejött elem, csak biztosított.</option>
+      </select><br>
+
+    <div class="teszt5-form-field">
+      <input type="button" value="Következő" id="beadas" class="btn" onclick="test5(); corrects();">
+    </div> 
+
+
+    <div class="teszt5-form-field">
+      <input type="button" value="Vissza" id="gomb" class="btn" onclick="back4()">
+    </div> 
+  </form>  
+</div>
+
+<div id="eredmeny">
+      <p></p> 
+</div>
+
+<script src="login.js"></script>
+</body>
+</html>
